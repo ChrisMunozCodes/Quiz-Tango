@@ -55,7 +55,7 @@ html{
     /* Main */
 
     main {
-      background-color: #372A55;
+      background-color: #627881;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -80,13 +80,21 @@ html{
 
     .circle-img {
       border-radius: 50%;
-      background-color: #627881;
+      background-color: #372A55;
       width: 20vw;
       height: 40vh;
       padding: 1rem;
       color: white;
+      border: .2rem solid white;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 4rem;
+    }
+
+    h3 {
+        border-bottom: 1rem solid white;
+        border-radius: 50%;
+        padding: 1rem;
+
     }
