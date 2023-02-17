@@ -56,7 +56,8 @@ html{
 
     main {
       background-color: #372A55;
-      height: 100vh;
+      height: auto;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -68,7 +69,6 @@ html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50vw;
         padding: 1rem;
       }
   
@@ -91,6 +91,7 @@ html{
         border-radius: .5rem;
         background-color: #627881;
         margin: .5rem;
+        padding: 1rem;
       }
 
       .grid-item div {
@@ -102,3 +103,30 @@ html{
         color: white;
         font-size: 1.5rem;
       }
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    width: 90vw;
+    height: auto;
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr); /* Five equal-width columns */
+    width: 80vw;
+    height: 70vh;
+  }
+}
