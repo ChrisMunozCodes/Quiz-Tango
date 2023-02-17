@@ -45,7 +45,7 @@ html{
   .navbar a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 3vmin;
   }
   
   .navbar a:hover {
@@ -74,7 +74,7 @@ html{
   
       #container h2 {
         color: white;
-        font-size: 4rem;
+        font-size: 6vmin;
         padding: 1rem;
       }
 
@@ -98,16 +98,17 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex-direction: column;
         height: 100%;
         color: white;
-        font-size: 1.5rem;
+        font-size: 3vmin;
       }
 
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-columns: repeat(1, 1fr); /* Two equal-width columns */
     width: 90vw;
     height: auto;
   }
@@ -116,7 +117,7 @@ html{
 /* For screens between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   .grid-container {
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    grid-template-columns: repeat(2, 1fr); /* Three equal-width columns */
     width: 80vw;
     height: auto;
   }
