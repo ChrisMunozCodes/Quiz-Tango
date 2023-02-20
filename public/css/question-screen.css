@@ -119,9 +119,7 @@ html{
 .choice button {
     background-color: #AD5BEB;
     border-radius: 50%;
-    width: .75rem;
-    height: .75rem;
-    padding: 1rem;
+    padding: .6rem;
     margin: 1rem;
 }
 
