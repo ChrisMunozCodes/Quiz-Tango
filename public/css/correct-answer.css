@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  /* Removes ::marker */
+
+li {
+  list-style-type: none;
+}
+
+html{
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 1rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 50, 50);
+  }
+
+    /* Main */
+
+    main {
+      background-color: #372A55;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50vw;
+      padding: 1rem;
+    }
+
+    #container h2 {
+      color: white;
+      font-size: 4rem;
+      padding: 1rem;
+    }
+
+    .circle-img {
+      border-radius: 50%;
+      background-color: #627881;
+      width: 20vw;
+      height: 40vh;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+    }
