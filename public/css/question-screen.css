@@ -68,9 +68,8 @@ html{
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 50vw;
-      height: 100vh;
-      border: .2rem solid white;
+      width: 40vw;
+      border: .4rem solid white;
       border-radius: 1rem;
       margin: 1rem;
     }
@@ -92,11 +91,11 @@ html{
 }
 
 .questions {
-    background-color: #627881;
+    background-color: #372A55;;
     color: white;
     font-size: 2rem;
     width: 100%;
-    min-height: 20%;
+    height: 15vh;
     display: flex;
     align-items: center;   
     justify-content: center;
@@ -111,6 +110,7 @@ html{
 .choice {
     color: white;
     background-color: #393C50;
+    height: 10vh;
     font-size: 2rem;
     display: flex;
     align-items: center;   
@@ -124,4 +124,15 @@ html{
     height: 1rem;
     padding: 1rem;
     margin: 1rem;
+}
+
+.submit button{
+    height: 20%;
+    border-radius: 2rem;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: white;
+    color: #372A55;
+    font-size: 3rem;
 }
