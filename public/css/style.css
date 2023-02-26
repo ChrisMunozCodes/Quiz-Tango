@@ -114,10 +114,11 @@ html{
       height: 3rem;
       padding: 1rem;
       margin: 1rem;
+      background-color: #7961B6;;
     }
 
-    .selected button {
-      background-color: #7961B6;
+    .selected{
+      color: white;
     }
 
     .tango-button button {
