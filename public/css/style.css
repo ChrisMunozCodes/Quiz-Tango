@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+  /* Removes ::marker */
+
+li {
+  list-style-type: none;
+}
 
 html{
     font-size: 16px;
@@ -84,4 +89,27 @@ html{
       justify-content: center;
       align-items: center;
       font-size: 4rem;
+    }
+
+    .difficulty-menu {
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .difficulty-menu ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .difficulty-menu ul li button {
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      padding: 1rem;
+      background-color: white;
     }
