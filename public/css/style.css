@@ -1,3 +1,12 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 html{
     font-size: 16px;
   }
@@ -7,10 +16,6 @@ html{
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background-image: url(../images/login-page-img.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
   }
   
   /* Navbar */
@@ -41,3 +46,42 @@ html{
   .navbar a:hover {
     color: rgb(255, 50, 50);
   }
+
+    /* Main */
+
+    main {
+      background-color: #372A55;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50vw;
+      padding: 1rem;
+    }
+
+    #container h2 {
+      color: white;
+      font-size: 4rem;
+      padding: 1rem;
+    }
+
+    .circle-img {
+      border-radius: 50%;
+      background-color: #627881;
+      width: 20vw;
+      height: 40vh;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+    }
