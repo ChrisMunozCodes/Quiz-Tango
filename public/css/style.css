@@ -91,6 +91,8 @@ html{
       font-size: 4rem;
     }
 
+    /* Three circles to select difficulty (Easy, Medium, Hard) */
+
     .difficulty-menu {
       width: 50vw;
       display: flex;
@@ -111,7 +113,11 @@ html{
       width: 3rem;
       height: 3rem;
       padding: 1rem;
-      background-color: white;
+      margin: 1rem;
+    }
+
+    .selected button {
+      background-color: #7961B6;
     }
 
     .tango-button button {
