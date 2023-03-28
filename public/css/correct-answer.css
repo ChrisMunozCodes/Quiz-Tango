@@ -59,41 +59,25 @@ html{
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      flex-direction: row;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
     }
 
-    #container {
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 50vw;
-      padding: 1rem;
+      margin-bottom: 20vmin;
     }
 
-    #container h2 {
+    i {
+      font-size: 40vmin;
+      padding: 1vmin;
+    }
+
+    main h2 {
+      font-size: 10vmin;
       color: white;
-      font-size: 4rem;
-      padding: 1rem;
-    }
-
-    .circle-img {
-      border-radius: 50%;
-      background-color: #372A55;
-      width: 20vw;
-      height: 40vh;
-      padding: 1rem;
-      color: white;
-      border: .2rem solid white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 4rem;
-    }
-
-    h3 {
-        border-bottom: 1rem solid white;
-        border-radius: 50%;
-        padding: 3rem;
     }
