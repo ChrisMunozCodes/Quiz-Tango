@@ -146,17 +146,26 @@ html{
       background-color: #7961B6;;
     }
 
-    .selected{
-      color: white;
+    .difficulty-menu ul .selected button{
+      background-color: white;
     }
 
     .tango-button button {
       border-radius: 2rem;
       height: auto;
       padding: 1rem;
+      background-color: #7961B6;
+      color: white;
+      font-size: 3rem;
+    }
+    
+    .tango-button button::after {
+      color: #372A55;
+    }
+
+    .tango-button button.clicked {
       background-color: white;
       color: #372A55;
-      font-size: 3rem;
     }
 
 
