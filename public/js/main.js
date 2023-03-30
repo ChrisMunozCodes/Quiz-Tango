@@ -1,3 +1,22 @@
+//API code//
+document.querySelector('button').addEventListener('click', getQuizData)
+
+
+function getQuizData(){
+    
+  fetch(`https://opentdb.com/api.php?amount=10&category=9&difficulty=easy`)
+  .then(res => res.json())
+  .then(data => {
+      console.log(data)
+  })
+  .catch(err => {
+      console.log(`error ${err}`)
+  }) 
+}
+/**** End of API code ****/
+
+
+
 //on click of the button with the class of .easy, this line of code will execute the function 'selectEasy'.
 document.querySelector('.easy').addEventListener('click', selectEasy);
 
