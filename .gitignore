@@ -1,0 +1,4 @@
+# ignoring node_modules, git upload doesn't like node_modules :(
+node_modules
+# ignoring sensitive data
+.env
