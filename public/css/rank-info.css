@@ -96,8 +96,8 @@
     height: auto;
   }
   
-  /* Media queries */
-  @media screen and (max-width: 768px) {
+  /* Screens 985px and below */
+  @media screen and (max-width: 985px) {
     .navbar {
       padding: 0.5rem;
     }
@@ -116,5 +116,164 @@
     
     .rank-list {
       font-size: 2vmin;
+    }
+  }
+
+/* Screens 800px and below */
+@media screen and (max-width: 800px) {
+  /* Navbar */
+  .navbar {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 0.5rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 50, 50);
+  }
+  
+  /* Main */
+  main {
+    background-color: #372A55;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  #container h2 {
+    color: white;
+    font-size: 4vmin;
+    padding: 1rem;
+  }
+  
+  .rank-list {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4vmin;
+  }
+  
+  .rank-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rank-list li img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Screens 468px and below */
+@media screen and (max-width: 468px) {
+    /* Navbar */
+    .navbar {
+      background: #333;
+      color: #fff;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .navbar ul li {
+      margin-left: 0.5rem;
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    
+    .navbar a:hover {
+      color: rgb(255, 50, 50);
+    }
+    
+    /* Main */
+    main {
+      background-color: #372A55;
+      height: auto;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    #container h2 {
+      color: white;
+      text-align: center;
+      font-size: 4vmin;
+      padding: 1rem;
+    }
+    
+    .rank-list {
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 4vmin;
+    }
+    
+    .rank-list li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .rank-list li img {
+      max-width: 100%;
+      height: auto;
     }
   }
