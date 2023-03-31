@@ -79,7 +79,7 @@ html{
 
     #container h2 {
       color: white;
-      font-size: 7vmin;
+      font-size: 5vmin;
       padding: 1rem;
     }
 
@@ -92,7 +92,7 @@ html{
 }
 
 .questions {
-    background-color: #372A55;;
+    background-color: #372A55;
     color: white;
     font-size: 3vmin;
     width: 100%;

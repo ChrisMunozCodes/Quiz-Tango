@@ -1,9 +1,12 @@
-//Variables to get category and difficulty data from localStorage.
+//Variables to get category, difficulty data from localStorage, and update the question.
 const savedCategory = localStorage.getItem('category');
 const savedDifficulty = localStorage.getItem('difficulty');
+let currentQuestion = -1
 
 let apiUrl = `https://opentdb.com/api.php?amount=10&category=${savedCategory}&difficulty=${savedDifficulty}&type=multiple`;
 
+//Run next question on load, since currentQuestion = -1, the first time this runs it will increment and display the first question aka 0.
+window.onload = nextQuestion();
 
 //algorithm to randomly shuffle arrays
 function shuffleArray(array) {
@@ -13,18 +16,23 @@ function shuffleArray(array) {
     }
     return array;
 }
-//
 
-  
+//
+function nextQuestion(){
+    currentQuestion++
+
+
   fetch(apiUrl)
     .then(res => res.json())
     .then(data => {
       console.log(data)
+        document.querySelector('#questionNumber').innerHTML = `Question: ${currentQuestion + 1}/10`
+
       //puts question in the dom.
-      document.querySelector('.questions p').innerHTML = data.results[0].question
+      document.querySelector('.questions p').innerHTML = data.results[currentQuestion].question
         
       //shuffles array of answers.
-      let answerArr = [data.results[0].correct_answer, data.results[0].incorrect_answers[0], data.results[0].incorrect_answers[1], data.results[0].incorrect_answers[2]]
+      let answerArr = [data.results[currentQuestion].correct_answer, data.results[currentQuestion].incorrect_answers[0], data.results[currentQuestion].incorrect_answers[1], data.results[currentQuestion].incorrect_answers[2]]
       answerArr = shuffleArray(answerArr);
 
       //puts answers in the dom.
@@ -36,7 +44,7 @@ function shuffleArray(array) {
     .catch(err => {
       console.log(`error ${err}`)
     }) 
-
+}
 
 /**** End of API code ****/
 
@@ -105,6 +113,8 @@ if (fourthBtn) {
     }
   });
 }
+//
+
 
 //** Submit button, click style ** //
 const submitButton = document.querySelector('.submit button');
@@ -117,3 +127,41 @@ if (submitButton) {
     }, 200);
   });
 }
+//
+
+
+//timer functionality
+//variables that grabs the dom element and sets the time count.
+const timer = document.getElementById('timer');
+let timeLeft = 60;
+
+// Define timerInterval outside of runTimer
+let timerInterval = setInterval(runTimer, 1000);
+
+// runTimer lowers timeLeft by 1 every time it's runned. 
+function runTimer() {
+  timeLeft--;
+
+  //Time format
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+
+  //concates both minutes and sections and uses padStart to ensure seconds are always displayed as two numbers.
+  const formattedTime = `${minutes}:${seconds.toString().padStart(2, '0')}`
+  document.querySelector('.header div:nth-child(2) h2').innerHTML = formattedTime;
+
+  // Update the timer element
+  timer.textContent = formattedTime;
+
+  // Stop the timer when timeLeft reaches 0
+  if (timeLeft <= 0) {
+    clearInterval(timerInterval);
+    nextQuestion();
+    timeLeft = 60;
+    timerInterval = setInterval(runTimer, 1000);
+  }
+}
+
+// wrong and right answer conditions
+
+
