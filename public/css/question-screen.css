@@ -97,6 +97,7 @@ html{
     font-size: 3vmin;
     width: 100%;
     height: 15vh;
+    padding: 1rem;
     display: flex;
     align-items: center;   
     justify-content: center;
@@ -114,8 +115,17 @@ html{
     font-size: 2vmin;
     display: flex;
     align-items: center;   
-    border-bottom: solid .1rem black;
+    border: solid .2rem black;
 }
+
+.choice1{
+  border-top: solid .4rem black;
+}
+
+.choice4{
+  border-bottom: solid .4rem black;
+}
+
 
 .choice button {
     background-color: #AD5BEB;
@@ -130,7 +140,20 @@ html{
     height: auto;
     padding: 1rem;
     margin: 1rem;
-    background-color: white;
-    color: #372A55;
+    background-color: #7961B6;
+    color: white;
     font-size: 4vmin;
+}
+
+.submit button::after {
+  color: #372A55;
+}
+
+.submit button.clicked {
+  background-color: white;
+  color: #372A55;
+}
+
+html body .selected {
+  background-color: white;
 }

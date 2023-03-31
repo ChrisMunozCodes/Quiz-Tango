@@ -1014,7 +1014,7 @@ body {
               color: #372A55;
             }
         
-            .tango-button button.clicked {
+            .clicked {
               background-color: white;
               color: #372A55;
             }
