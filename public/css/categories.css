@@ -91,7 +91,6 @@ html{
         border-radius: .5rem;
         background-color: #627881;
         margin: .5rem;
-        padding: 1rem;
       }
 
       .grid-item div {
@@ -103,6 +102,13 @@ html{
         height: 100%;
         color: white;
         font-size: 3vmin;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
 
 /* For screens smaller than 768px */
