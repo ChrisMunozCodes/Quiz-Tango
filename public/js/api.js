@@ -1,7 +1,12 @@
 //Variables to get category, difficulty data from localStorage, and update the question.
 const savedCategory = localStorage.getItem('category');
 const savedDifficulty = localStorage.getItem('difficulty');
-let currentQuestion = -1
+
+// variable that holds the index of the current question, if an index already exists in localStorage, use that instead.
+let currentQuestion = localStorage.getItem('currentQuestion') || -1;
+//
+
+
 
 let apiUrl = `https://opentdb.com/api.php?amount=10&category=${savedCategory}&difficulty=${savedDifficulty}&type=multiple`;
 
@@ -156,12 +161,25 @@ function runTimer() {
   // Stop the timer when timeLeft reaches 0
   if (timeLeft <= 0) {
     clearInterval(timerInterval);
+    localStorage.setItem('currentQuestion', currentQuestion);
+    showWrong();
     nextQuestion();
     timeLeft = 60;
     timerInterval = setInterval(runTimer, 1000);
   }
 }
 
+// show wrong answer screen.
+function showWrong(){
+  window.location.href = 'wrong-answer.html'
+}
+
+// show correct answer screen.
+function showCorrect(){
+  window.location.href = 'correct-answer.html'
+}
+
 // wrong and right answer conditions
+
 
 
