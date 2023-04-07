@@ -201,6 +201,42 @@ function runTimer() {
 //timer function ends here.
 }
 
+//Submit button click conditions logic.
+  //can use the variable submitButton since I defined it earlier in the code for the button click styles.
+  if (submitButton) {
+      submitButton.addEventListener('click', () => {
+        submitCheck()
+    })
+  }
+
+
+    function submitCheck() {
+      const selectedAnswer = document.querySelector('.selected')
+      const quizData = JSON.parse(localStorage.getItem('quizData'))
+
+
+      // right answer click condition
+      if(selectedAnswer.nextElementSibling.innerText == quizData.results[currentQuestion].correct_answer) {
+        clearInterval(timerInterval);
+        localStorage.setItem('currentQuestion', currentQuestion);
+  
+          showCorrect();
+          nextQuestion();
+          timeLeft = 60;
+          timerInterval = setInterval(runTimer, 1000);
+      // wrong answer click condition
+      } else {
+        clearInterval(timerInterval);
+        localStorage.setItem('currentQuestion', currentQuestion);
+  
+          showWrong();
+          nextQuestion();
+          timeLeft = 60;
+          timerInterval = setInterval(runTimer, 1000);
+      }
+    }
+//
+
 
 // wrong and right answer conditions
 
