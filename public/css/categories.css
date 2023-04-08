@@ -93,6 +93,10 @@ html{
         margin: .5rem;
       }
 
+      .grid-item:hover {
+        background-color: #D78F69;
+      }
+
       .grid-item div {
         display: flex;
         justify-content: center;

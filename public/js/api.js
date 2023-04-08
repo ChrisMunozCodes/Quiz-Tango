@@ -31,6 +31,9 @@ function nextQuestion(){
     .then(res => res.json())
     .then(data => {
       console.log(data)
+      //save question data to store for later
+      localStorage.setItem('quizData', JSON.stringify(data));
+
         document.querySelector('#questionNumber').innerHTML = `Question: ${currentQuestion + 1}/10`
 
       //puts question in the dom.
@@ -160,26 +163,56 @@ function runTimer() {
 
   // Stop the timer when timeLeft reaches 0
   if (timeLeft <= 0) {
-    clearInterval(timerInterval);
-    localStorage.setItem('currentQuestion', currentQuestion);
-    showWrong();
-    nextQuestion();
-    timeLeft = 60;
-    timerInterval = setInterval(runTimer, 1000);
+
+    //variables for storing points for win conditions, and the dom button that was selected for an answer.
+    //Also another API fetch so the api data is accessiable for the if condition
+    let points = 0
+    const selectedAnswer = document.querySelector('.selected')
+
+    // Brings in the quizData from the fetch code.
+    const quizData = JSON.parse(localStorage.getItem('quizData'))
+
+      //if the sibling of the selectedAnswer (in this case the innerText of the answer that is selected) is equal to the APIs data of correct answer,
+      //continue with the showCorrect() function, otherwise continue with the showWrong() function.
+      if(selectedAnswer.nextElementSibling.innerText == quizData.results[currentQuestion].correct_answer) {
+      //clears intervval and sets the current question in localStorage.
+      clearInterval(timerInterval);
+      localStorage.setItem('currentQuestion', currentQuestion);
+
+        showCorrect();
+        nextQuestion();
+        timeLeft = 60;
+        timerInterval = setInterval(runTimer, 1000);
+      } else {
+      //clears intervval and sets the current question in localStorage.
+      clearInterval(timerInterval);
+      localStorage.setItem('currentQuestion', currentQuestion);
+
+        showWrong();
+        nextQuestion();
+        timeLeft = 60;
+        timerInterval = setInterval(runTimer, 1000);
+      }
+
+
+
+  //if statement for timer reaching 0 ends here
   }
+//timer function ends here.
 }
 
-// show wrong answer screen.
-function showWrong(){
-  window.location.href = 'wrong-answer.html'
-}
-
-// show correct answer screen.
-function showCorrect(){
-  window.location.href = 'correct-answer.html'
-}
 
 // wrong and right answer conditions
 
+    // show wrong answer screen.
+    function showWrong(){
+      window.location.href = 'wrong-answer.html'
+    }
 
+    // show correct answer screen.
+    function showCorrect(){
+      window.location.href = 'correct-answer.html'
+    }
+
+// 
 
