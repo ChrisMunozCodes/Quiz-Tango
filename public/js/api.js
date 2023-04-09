@@ -174,7 +174,7 @@ function runTimer() {
 
       //if the sibling of the selectedAnswer (in this case the innerText of the answer that is selected) is equal to the APIs data of correct answer,
       //continue with the showCorrect() function, otherwise continue with the showWrong() function.
-      if(selectedAnswer.nextElementSibling.innerText == quizData.results[currentQuestion].correct_answer) {
+      if(selectedAnswer &&  selectedAnswer.nextElementSibling.innerText == quizData.results[currentQuestion].correct_answer) {
       //clears intervval and sets the current question in localStorage.
       clearInterval(timerInterval);
       localStorage.setItem('currentQuestion', currentQuestion);
@@ -183,17 +183,25 @@ function runTimer() {
         nextQuestion();
         timeLeft = 60;
         timerInterval = setInterval(runTimer, 1000);
-      } else {
-      //clears intervval and sets the current question in localStorage.
-      clearInterval(timerInterval);
-      localStorage.setItem('currentQuestion', currentQuestion);
+      } else if (!selectedAnswer) {
+        //clears intervval and sets the current question in localStorage.
+        clearInterval(timerInterval);
+        localStorage.setItem('currentQuestion', currentQuestion);
 
         showWrong();
         nextQuestion();
         timeLeft = 60;
         timerInterval = setInterval(runTimer, 1000);
+      } else {
+        //clears interval and sets the current question in localStorage.
+        clearInterval(timerInterval);
+        localStorage.setItem('currentQuestion', currentQuestion);
+      
+        showWrong();
+        nextQuestion();
+        timeLeft = 60;
+        timerInterval = setInterval(runTimer, 1000);
       }
-
 
 
   //if statement for timer reaching 0 ends here
