@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Tango</title>
     <script>
-      setTimeout(() => {
-      location.href = 'question-screen.html';
-      }, 5000); // 5000 milliseconds = 5 seconds
+      if(localStorage.getItem('currentQuestion') === '9') {
+        setTimeout(() => {
+        location.href = 'end-of-quiz.html';
+        }, 5000); // 5000 milliseconds = 5 seconds
+      } else {
+        setTimeout(() => {
+        location.href = 'question-screen.html';
+        }, 5000); // 5000 milliseconds = 5 seconds
+      }
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/end-of-quiz.css" />
 </head>
-  <body>
+<body>
     <header>
         <div class="navbar">
           <div class="logo">
@@ -34,33 +34,164 @@
       <main>
         <section id="container">
           <div class="welcome">
-            <h2>Here are your results:</h2>
+            <h2>Lets look at your results:</h2>
           </div>
 
-          <div class="results-container">
-            <ul>
-              <li>
-                <h3>Points earned:</h3>
-                <span>1000</span>
-              </li>
-              <li>
-                <h3>Correct answers:</h3>              
-              </li>
-              <li>
-                <h3>Wrong answers:</h3>
-              </li>
-
-              <li>
-                <h3>A+</h3>
-              </li>
-
-              <button>Back Home</button>
-            </ul>
+          <div class="points-earned-section">
+              <p>Points earned: <span class="points">1000</span></p>
           </div>
 
+          <div class="correct-answers-section">
+            <div class="tips-container">
+              <ul class="accordion-menu">
+                <li class="link">
+                  <div class="dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    CORRECT ANSWERS
+                  </div>
+                  <ul class="submenu-items">
+                    <li class="category-selection">
+                      <section class="style-click selected">
+                        <h2>STYLE</h2>
+                      </section>
+
+                      <section class="lighting-click">
+                        <h2>LIGHTING</h2>
+                      </section>
+
+                      <section class="mood-click">
+                        <h2>MOOD</h2>
+                      </section>
+              
+                    </li>
+
+
+                    <li class="suggestion-container suggestion-style suggestion-shown">
+                      <div>
+                        <button>Cartoonish</button>
+                        <button>Realistic</button>
+                        <button>Abstract</button>
+                        <button>Minimalism</button>
+                        <button>Surrealism</button>
+                        <button>Cyberpunk</button>
+                        <button>Cubism</button>
+                        <button>Pop Art</button>
+                        <button>Baroque</button>
+                      </div>
+                    </li>
+
+                    <li class="suggestion-container suggestion-lighting">
+                      <div>
+                        <button>Bright</button>
+                        <button>Dim</button>
+                        <button>Flickering</button>
+                        <button>Neon</button>
+                        <button>Spotlight</button>
+                        <button>Shimmering</button>
+                        <button>Glow</button>
+                        <button>Harsh</button>
+                        <button>Soft</button>
+                      </div>
+                    </li>
+
+                    <li class="suggestion-container suggestion-mood">
+                      <div>
+                        <button>Euphoric</button>
+                        <button>Melancholic</button>
+                        <button>Serene</button>
+                        <button>Nostalgic</button>
+                        <button>Somber</button>
+                        <button>Vibrant</button>
+                        <button>Intense</button>
+                        <button>Serendipitous</button>
+                        <button>Calming</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrong-answers-section">
+            <div class="tips-container">
+              <ul class="accordion-menu">
+                <li class="link">
+                  <div class="dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    WRONG ANSWERS
+                  </div>
+                  <ul class="submenu-items">
+                    <li class="category-selection">
+                      <section class="style-click selected">
+                        <h2>STYLE</h2>
+                      </section>
+
+                      <section class="lighting-click">
+                        <h2>LIGHTING</h2>
+                      </section>
+
+                      <section class="mood-click">
+                        <h2>MOOD</h2>
+                      </section>
+              
+                    </li>
+
+
+                    <li class="suggestion-container suggestion-style suggestion-shown">
+                      <div>
+                        <button>Cartoonish</button>
+                        <button>Realistic</button>
+                        <button>Abstract</button>
+                        <button>Minimalism</button>
+                        <button>Surrealism</button>
+                        <button>Cyberpunk</button>
+                        <button>Cubism</button>
+                        <button>Pop Art</button>
+                        <button>Baroque</button>
+                      </div>
+                    </li>
+
+                    <li class="suggestion-container suggestion-lighting">
+                      <div>
+                        <button>Bright</button>
+                        <button>Dim</button>
+                        <button>Flickering</button>
+                        <button>Neon</button>
+                        <button>Spotlight</button>
+                        <button>Shimmering</button>
+                        <button>Glow</button>
+                        <button>Harsh</button>
+                        <button>Soft</button>
+                      </div>
+                    </li>
+
+                    <li class="suggestion-container suggestion-mood">
+                      <div>
+                        <button>Euphoric</button>
+                        <button>Melancholic</button>
+                        <button>Serene</button>
+                        <button>Nostalgic</button>
+                        <button>Somber</button>
+                        <button>Vibrant</button>
+                        <button>Intense</button>
+                        <button>Serendipitous</button>
+                        <button>Calming</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="home-button">
+            <a href="index.html"><button>TANGO AGAIN</button></a>
+          </div>
         </section>
       </main>
-      
-  </body>
 
+</body>
+  <script src="js/dropdown.js" type="module"></script>
 </html>
