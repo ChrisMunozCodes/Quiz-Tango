@@ -1,5 +1,13 @@
-//By default select easy difficulty and store it in session storage.
-let difficulty = localStorage.getItem('difficulty') || 'easy';
+// Check if there is a difficulty setting in localStorage
+let storedDifficulty = localStorage.getItem('difficulty');
+
+// If there is no stored difficulty, use 'easy'
+let difficulty = storedDifficulty || 'easy';
+
+// If there is no stored difficulty, store 'easy' in localStorage
+if (!storedDifficulty) {
+  localStorage.setItem('difficulty', 'easy');
+}
 
 //if there's already 'difficulty' within storage use that instead. 
 if (localStorage.getItem('difficulty')) {
