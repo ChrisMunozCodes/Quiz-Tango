@@ -145,6 +145,7 @@ let timeLeft = 60;
 
 // Define timerInterval outside of runTimer
 let timerInterval = setInterval(runTimer, 1000);
+runTimer()
 
 // runTimer lowers timeLeft by 1 every time it's runned. 
 function runTimer() {
