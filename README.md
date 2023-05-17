@@ -31,17 +31,8 @@ Technologies that I used to develop this api
 - [CSS](https://www.w3schools.com/css/)
 
 ## 💻 Getting started
-- Enter "npm install" in your terminal to install dependencies. 
-- Add a .env file (You will store your enviornment variables here).
-
-Within your new .env file include your environment variables
-```
-PORT= "*port goes here*"
-OPENAI_API_KEY= "*key goes here*"
-
-MONGODB_URL = "*Your mongo link here*"
-
-**Clone the project and access the folder**
+- 
+- 
 ```
 
 ## 🤔 How to contribute
