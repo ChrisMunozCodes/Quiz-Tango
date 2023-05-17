@@ -20,15 +20,12 @@
 
 ## 👨🏻‍💻 About the project
 
-<p align="left" style="color: red;">Pixel Visionize is a text to image generation tool using OpenAI's API technology. Pixel Visionize will give you suggestions for text prompts, allow you to save your creations, and allow you to access your own gallery.</p>
+<p align="left" style="color: red;">Quiz Tango is a front-end application that I built using HTML, CSS, JavaScript, and the QuizDB API. When you enter the app, you'll be prompted to choose your quizzes difficulty. After that, you can choose a category to have your knowledge be tested in! After which the quiz will start with a 60 second timer. Answer before the timer reaches 0! Rack up points for correct answer choices!</p>
 
 ## 🚀 Technologies
 
 Technologies that I used to develop this api
 
-- [Node.js](https://nodejs.org/en/)
-- [Express](https://expressjs.com/pt-br/)
-- [Nodemon](https://nodemon.io/)
 - [JavaScript](https://www.javascript.com/)
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
