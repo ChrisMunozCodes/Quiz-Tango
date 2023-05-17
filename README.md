@@ -64,3 +64,10 @@ $ git clone https://github.com/ChrisMunozCodes/Quiz-Tango.git
 
 9. Now go back to your github and a button will appear that prompts you to make a pull request
 ```
+
+## 🤔 Features to add
+```
+1. User authentication
+2. Database point storage using MongoDB & Mongoose instead of locally.
+3. Versus mode, users can compete in quizzes in real time to see who can rack up more points.
+4. User ranks.
