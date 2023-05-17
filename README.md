@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-<a href="https://ibb.co/pvN0LhB"><img src="https://ibb.co/pvN0LhB" alt="512fa52f1f7581a8c64b2fba72c43c2e" border="0"></a>
+<a href="https://ibb.co/pvN0LhB"><img src="https://i.ibb.co/pvN0LhB/17d91c20ed815db72f8dd0c6eee825c8.png" alt="17d91c20ed815db72f8dd0c6eee825c8" border="0"></a>
 </p>
 
 ## 👨🏻‍💻 About the project
