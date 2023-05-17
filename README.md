@@ -38,21 +38,21 @@ Technologies that I used to develop this api
 ## 🤔 How to contribute
 
 ```bash
-$ git clone https://github.com/ChrisMunozCodes/PixelVisionize.git
+$ git clone https://github.com/ChrisMunozCodes/Quiz-Tango.git
 ```
 
 **Follow the steps below**
 
 ```bash
-0. Leave a comment on the issue you would like to work on 
+0. Leave a comment on the issue you would like to work on.
 
-1. Fork the original repository (top right corner next to watch and star buttons)
+1. Fork the original repository (top right corner next to watch and star buttons).
 
-2. Under the dropdown menu from the button "code" copy the HTTPS link (from your forked repository) 'https://github.com/(your username)/PixelVisionize.git'
+2. Under the dropdown menu from the button "code" copy the HTTPS link (from your forked repository) 'https://github.com/(your username)/Quiz-Tango.git'
 
-3. In the place you want to clone the project, use git clone (your https link here)
+3. In the place you want to clone the project, use git clone (your https link here).
 
-4. Once you have the project open in VSCODE use 'git remote add upstream  https://github.com/ChrisMunozCodes/PixelVisionize.git' in the terminal, this will track the main repository 
+4. Once you have the project open in VSCODE use 'git remote add upstream  https://github.com/ChrisMunozCodes/Quiz-Tango.git' in the terminal, this will track the main repository.
 
 5. You can now use 'git fetch upstream' in the terminal to see a list of the different branches.
 
