@@ -34,7 +34,7 @@ Technologies that I used to develop this api
 - 
 - 
 ```
-
+```
 ## 🤔 How to contribute
 
 ```bash
