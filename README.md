@@ -22,6 +22,10 @@
 <a href="https://ibb.co/n1QqMf2"><img src="https://i.ibb.co/DMwPfkX/346c6d44816e8724fba49d591f4a76bd.png" alt="346c6d44816e8724fba49d591f4a76bd" border="0"></a>
 </p>
 
+<p align="center">
+<a href="https://ibb.co/KsmhyV9"><img src="https://i.ibb.co/gW69gtD/fd04ead4865580f0ea66254f18237d29.png" alt="fd04ead4865580f0ea66254f18237d29" border="0"></a>
+</p>
+
 ## 👨🏻‍💻 About the project
 
 <p align="left" style="color: red;">Quiz Tango is a front-end application that I built using HTML, CSS, JavaScript, and the QuizDB API. When you enter the app, you'll be prompted to choose your quizzes difficulty. After that, you can choose a category to have your knowledge be tested in! After which the quiz will start with a 60 second timer. Answer before the timer reaches 0! Rack up points for correct answer choices!</p>
