@@ -195,7 +195,7 @@ html{
   .submenu-items li {
     color: white;
     font-weight: 600;
-    padding: 12px 12px 12px 12px;
+    padding: 18px 18px 18px 18px;
     transition: all 0.2s ease-out;
     display: flex;
     text-align: center;
@@ -241,7 +241,7 @@ html{
       background: transparent;
       border: 1px solid white;
       color: white;
-      font-size: 1rem;
+      font-size: 2rem;
       margin: .5rem;
       padding: 10px 20px;
     }
@@ -250,9 +250,6 @@ html{
       background: transparent;
       border: 1px solid rgb(255, 63, 63);
       color: rgb(255, 63, 63);
-      font-size: 1rem;
-      margin: .5rem;
-      padding: 10px 20px;
     }
 
     /* Suggestion buttons hidden elements */
