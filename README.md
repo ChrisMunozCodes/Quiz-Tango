@@ -32,7 +32,7 @@
 
 ## 🚀 Technologies
 
-Technologies that I used to develop this api
+Technologies that I used to develop Quiz Tango!
 
 - [JavaScript](https://www.javascript.com/)
 - [HTML](https://www.w3schools.com/html/)
