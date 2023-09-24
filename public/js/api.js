@@ -6,6 +6,9 @@ const savedDifficulty = localStorage.getItem('difficulty');
 let currentQuestion = localStorage.getItem('currentQuestion') || -1;
 //
 
+localStorage.setItem('correct', 0);
+localStorage.setItem('wrong', 0);
+
 
 
 let apiUrl = `https://opentdb.com/api.php?amount=10&category=${savedCategory}&difficulty=${savedDifficulty}&type=multiple`;
@@ -145,6 +148,7 @@ let timeLeft = 60;
 
 // Define timerInterval outside of runTimer
 let timerInterval = setInterval(runTimer, 1000);
+runTimer()
 
 // runTimer lowers timeLeft by 1 every time it's runned. 
 function runTimer() {
@@ -227,6 +231,7 @@ function runTimer() {
       if(selectedAnswer.nextElementSibling.innerText == quizData.results[currentQuestion].correct_answer) {
         clearInterval(timerInterval);
         localStorage.setItem('currentQuestion', currentQuestion);
+        
   
           showCorrect();
           nextQuestion();

@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: HKGrotesk-Medium
+font link: https://hanken.co/product/hk-grotesk/
+font author: Hanken Design Co.
+font author site: https://hanken.co/
+
+
+icon designer: Adrien Coquet
+icon designer link: /coquet_adrien
+        
+
+fontColor: {"hex":"#D78F69"}
+bgColor: {"hex":"#7961B6"}
+iconColor: {"hex":"#D78F69"}
+
+      
